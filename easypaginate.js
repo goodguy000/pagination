@@ -183,7 +183,7 @@ $.fn.easyPaginate = function (options) {
         plugin.settings = $.extend({}, defaults, options);
         
         plugin.currentElements = $([]);
-		plugin.settings.objElements = plugin.el.find('.page-content');
+		plugin.settings.objElements = plugin.el.find('.pagination-content');
         plugin.settings.pages = getNbOfPages();
         if(plugin.settings.pages > 1) {
             plugin.el.html();
